@@ -50,7 +50,7 @@ Create `.env` in the same folder as `agent.py`:
 
 ```env
 GOOGLE_API_KEY=YOUR_NEW_GEMINI_API_KEY
-TRAVEL_AGENT_MODEL=gemini-3.8-flash
+TRAVEL_AGENT_MODEL=gemini-3.5-flash-lite
 ```
 
 Do NOT commit or submit `.env`.
@@ -99,7 +99,7 @@ If an error says `gemini-2.5-flash is no longer available to new users`, check:
 echo $env:TRAVEL_AGENT_MODEL
 ```
 
-If it prints `gemini-3.5-flash`, run:
+If it prints `gemini-3.5-flash-lite`, run:
 
 ```powershell
 Remove-Item Env:TRAVEL_AGENT_MODEL -ErrorAction SilentlyContinue
@@ -111,7 +111,7 @@ Then close the terminal, open a new terminal, activate `.venv`, and run:
 adk web
 ```
 
-The project default is `gemini-3.5-flash`.
+The project default is `gemini-3.5-flash-lite`.
 
 ## Security
 
